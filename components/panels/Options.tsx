@@ -1,4 +1,3 @@
-import { Close } from "@radix-ui/react-dialog";
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
 import { m } from "framer-motion";
@@ -7,6 +6,7 @@ import { useGameStore } from "libs/Store";
 import { buttonVariants } from "components/ui/Button";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogFooter,
   DialogTrigger,
@@ -210,9 +210,9 @@ export default function OptionsPanel() {
           </TabsContent>
         </Tabs>
         <DialogFooter>
-          <Close className={buttonVariants({ variant: "primary" })}>
+          <DialogClose className={buttonVariants({ variant: "default" })}>
             Close
-          </Close>
+          </DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>

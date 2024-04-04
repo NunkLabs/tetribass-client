@@ -100,7 +100,7 @@ export default function StartPanel({ startGame }: { startGame: () => void }) {
             <Fragment>
               <m.button
                 className={`${buttonVariants({
-                  variant: "primary",
+                  variant: "default",
                 })} place-self-center`}
                 key="start-panel-start"
                 initial={{ opacity: 0, y: -10 }}

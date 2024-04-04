@@ -52,7 +52,7 @@ export default function ControlPanel({
                 {gameStatus === "ending" ? "Game Over" : "Paused"}
               </m.h1>
               <m.button
-                className={buttonVariants({ variant: "primary" })}
+                className={buttonVariants({ variant: "default" })}
                 key="control-panel-restart"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{
@@ -70,7 +70,7 @@ export default function ControlPanel({
               </m.button>
               {gameStatus === "pausing" && (
                 <m.button
-                  className={buttonVariants({ variant: "primary" })}
+                  className={buttonVariants({ variant: "default" })}
                   key="control-panel-resume"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{
